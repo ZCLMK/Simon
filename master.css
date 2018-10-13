@@ -1,0 +1,206 @@
+body {
+  position: fixed;
+  width: 100vw;
+  height: 100vh; }
+
+#root {
+  min-width: 500px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: #190a6d;
+  align-items: center;
+  justify-content: center; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block; }
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+#game {
+  display: flex;
+  flex-flow: row wrap;
+  border-radius: 50%;
+  width: 500px;
+  min-width: 500px;
+  height: 500px;
+  background-color: beige;
+  overflow: hidden;
+  border: solid black 18px; }
+
+.pad {
+  box-sizing: border-box;
+  width: 50%;
+  height: 50%; }
+
+.green {
+  background-color: #168629;
+  border-bottom: solid black 5px;
+  border-right: solid black 5px; }
+
+.red {
+  background-color: #db0000;
+  border-bottom: solid black 5px;
+  border-left: solid black 5px; }
+
+.yellow {
+  background-color: #e6d600;
+  border-right: solid black 5px;
+  border-top: solid black 5px; }
+
+.blue {
+  background-color: #030c86;
+  border-left: solid black 5px;
+  border-top: solid black 5px; }
+
+.light-green {
+  background-color: #00c21a; }
+
+.light-red {
+  background-color: #f3634f; }
+
+.light-yellow {
+  background-color: #fffc60; }
+
+.light-blue {
+  background-color: #226ac9; }
+
+#dashboard {
+  box-sizing: border-box;
+  width: 250px;
+  height: 250px;
+  border: 10px black solid;
+  border-radius: 50%;
+  background-color: white;
+  z-index: 10;
+  position: absolute;
+  transform: translate(125px, 125px);
+  overflow: hidden; }
+
+#dashboard-top, #dashboard-bottom {
+  width: 100%;
+  height: 46%;
+  display: flex; }
+
+#dashboard-top {
+  align-items: center;
+  justify-content: center; }
+  #dashboard-top h1 {
+    font-size: 3rem;
+    vertical-align: center;
+    margin: auto 0; }
+    #dashboard-top h1 .registered {
+      font-size: 1.4rem;
+      margin-bottom: 2rem; }
+
+#controls {
+  height: 50%; }
+  #controls #controls-top {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly; }
+    #controls #controls-top #control-top {
+      width: 25%;
+      height: 100%;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      #controls #controls-top #control-top:nth-child(1) {
+        width: 40%; }
+  #controls #controls-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+#start, #strict {
+  height: 20px;
+  width: 20px;
+  border: black solid 3px;
+  border-radius: 50%; }
+
+#start {
+  background-color: red; }
+
+#strict {
+  background-color: yellow; }
+
+#strict-led {
+  background-color: black;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  transform: translateY(-30px);
+  border-radius: 50%; }
+
+#switch {
+  width: 50px;
+  height: 20px;
+  display: flex;
+  background-color: black;
+  margin: 0px 5px; }
+  #switch #switch-btn {
+    width: 50%;
+    background-color: #002fff;
+    border: black 2px solid;
+    box-sizing: border-box; }
+  #switch .switch-on {
+    margin-left: 50%; }
+
+.screen {
+  height: 50%;
+  width: 60px;
+  border: black solid 2.5px;
+  border-radius: 10px;
+  background-color: #470c01;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .screen p {
+    color: #df0000;
+    font-size: 2.3rem; }

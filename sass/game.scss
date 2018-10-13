@@ -1,0 +1,56 @@
+@import './variables';
+
+#game{
+  box-sizing: border-box;
+  display: flex; 
+  flex-flow: row wrap;
+  border-radius: 50%;
+  width: $gameWidth;
+  height:$gameWidth;
+  min-width: 500px;
+  background-color: beige;
+  overflow: hidden;
+  border: solid black 18px;
+}
+.pad{
+  box-sizing: border-box;
+  width: 50%;
+  height: 50%;
+}
+
+.green{
+background-color: $green;
+border-bottom: $border;
+border-right: $border;
+}
+
+.red{
+  background-color: $red;
+  border-bottom: $border;
+  border-left: $border;
+}
+
+.yellow{
+  background-color: $yellow;
+  border-right: $border;
+  border-top: $border;
+}
+
+.blue{
+  background-color: $blue;
+  border-left: $border;
+  border-top: $border;
+}
+
+// ------------------------- ALL MEDIA QUERIES HERE -----------------------------
+
+
+@include mediaSm{
+  #game{
+    width: 360px;
+    height: 360px;
+    min-width: 300px;
+    min-height:300px;
+  }   
+
+}

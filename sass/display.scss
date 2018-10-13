@@ -1,0 +1,24 @@
+
+  .screen{
+    height: 50%;
+    width: 60px;
+    border: black solid 2.5px;
+    border-radius: 10px;
+    background-color: rgb(71, 12, 1);
+    padding: 5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    p{
+      color:rgb(223, 0, 0);
+      font-size: 2.3rem;
+      font-family: 'VT323', monospace, Verdana, Tahoma, sans-serif;
+    }
+  }
+
+  @include mediaSm{
+    .screen{
+      height: 80%;
+      width: 60px;
+    }
+  }

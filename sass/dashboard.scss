@@ -1,0 +1,54 @@
+@import './variables';
+
+
+#dashboard{
+  box-sizing: border-box;
+  width: $gameWidth/2;
+  height: $gameWidth/2;
+  border: 10px black solid;
+  border-radius: 50%;
+  background-color:white;
+  z-index: 10;
+  position: absolute;
+  transform: translate($gameWidth/4 - 18px, $gameWidth/4 - 15px);
+  overflow: hidden;
+}
+#dashboard-top, #dashboard-bottom{
+  width:100%;
+  height: 46%;
+  display:flex;
+}
+
+#dashboard-top{
+  align-items: center;
+  justify-content: center;
+  h1{
+    position: relative;
+    font-size: 3rem;
+    vertical-align: center;
+    margin: auto 0;
+    .registered{
+      position: absolute;
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+      right: -10px;
+      top: 0;
+    }
+  }
+}
+@include mediaSm{
+    #dashboard{
+    width: 180px;
+    height: 180px;
+    transform: translate(75px , 75px); 
+  }
+
+  #dashboard-top{
+    h1{
+      font-size: 2em;
+      .registered{
+        top: -5px;
+      }
+    }
+  }
+}
