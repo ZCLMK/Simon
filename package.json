@@ -2,7 +2,7 @@
   "name": "simon",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://ZCLMK.github.io/Zimone",
+  "homepage": "http://ZCLMK.github.io/Simon",
   "dependencies": {
     "node-sass": "^4.9.3",
     "react": "^16.4.2",
